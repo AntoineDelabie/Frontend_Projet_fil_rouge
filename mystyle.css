@@ -1,0 +1,51 @@
+h1 {
+    color: navy;
+    font-weight: bolder;
+}
+
+header {
+    padding: 20px;
+    background-color: navy;
+    margin-bottom: 40px;
+}
+
+header a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
+th, td{
+    border: 3px solid;
+    
+    width: 100%;
+}   
+
+th {
+    background-color: lightcoral;
+}
+
+tr.d0 td {
+    background-color: lightpink;
+  }
+tr.d1 td {
+    background-color: lightgray;
+
+  }
+
+table {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-collapse: collapse;
+}
