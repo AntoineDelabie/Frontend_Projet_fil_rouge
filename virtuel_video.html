@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,41 @@
     <title>Video</title>
     <link rel="stylesheet" href="mystyle.css">
 </head>
+
 <body>
 
-    <h1>Video du Zoo</h1>
     <header>
-        <a href="index.html">Accueil</a>
-        <a href="perso.html">Espace Perso</a>
-        <a href="animaux.html">Animaux</a>
-        <a href="virtuel_audio.html">Visite Virtuelle audio</a>
-        <a href="virtuel_video.html">Visite Virtuelle vidéo</a>
-        <a href="contact.html">Contact</a>
+        <h1>Video du Zoo</h1>
+        <div class="navbar">
+            <div class="menuItem">
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li class="subMenu">
+                        <a href="perso.html">Espace perso</a>
+                        <div class="subMenuContent">
+                            <a href="#">Connexion</a>
+                            <a href="#">Mes informations</a>
+                            <a href="#">Messagerie</a>
+                            <a href="#">Historique</a>
+                        </div>
+                    </li>
+                    <li><a href="animaux.html">Animaux</a></li>
+                    <li><a href="virtuel_audio.html">Visite Audio</a></li>
+                    <li><a href="virtuel_video.html">Visite Vidéo</a></li>
+                    <li style="float:right"><a class="active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </header>
-    
+
+    <div class="pageContent">
+        <p>Lo poti singe</p>
+        <video controls autoplay muted src="./media/video/singe.mp4"></video>
+        <p>Lo poti tigre</p>
+        <video controls muted src="./media/video/tigre.mp4"></video>
+
+    </div>
+
 </body>
+
 </html>

@@ -1,56 +1,103 @@
-h1 {
-    color: navy;
-    font-weight: bolder;
-}
-
+/* HEADER */
 header {
-    padding: 20px;
-    background-color: navy;
-    margin-bottom: 40px;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    top: 0;
+    background-color: #15616d;
+    box-shadow: 0px 8px 20px -4px #0b373d;
+    position: fixed;
 }
 
-header a {
-    margin-left: 10px;
-    margin-right: 10px;
-    color: aliceblue;
+h1 {
+    color: #001524;
     font-weight: bolder;
+    padding-left: 20px;
 }
 
-div {
-    margin : 10px;
+/* ----------------------------- */
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    background-color: #15616d;
+    position: sticky;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
-a:link { text-decoration: none; }
+.navbar a:hover {
+    color: #ff7d00;
+    background-color: #0e4952;
+}
 
-a:visited { text-decoration: none; }
-
-a:hover { text-decoration: none; }
-
-th, td{
-    border: 3px solid;
-    
-    
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
-}   
+}
 
-th {
-    background-color: lightcoral;
+.navbar li {
+    float: left;
+}
+
+a.contact {
+    float: right;
 }
 
 
-
-tr:nth-child(even){
-    background-color: blanchedalmond;
+li a {
+    display: inline-block;
+    text-align: center;
+    color: #ffecd1;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-tr {
-    background-color: beige;
+li.subMenu {
+    display: inline-block;
 }
 
-tr:hover {
-    background-color: chartreuse;
+.subMenuContent {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
 }
 
+.subMenuContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.subMenuContent a:hover {
+    background-color: #f1f1f1;
+}
+
+.subMenu:hover .subMenuContent {
+    display: block;
+}
+
+
+/* ----------------------------- */
+
+/* BODY */
+body {
+    margin: 0;
+    color: #001524;
+    background-color: #ffecd1;
+}
+
+.pageContent {
+    margin-top: 180px;
+}
+
+/* TABLE ANIMAUX */
 table {
     width: 85%;
     margin-left: auto;
@@ -59,14 +106,78 @@ table {
     table-layout: fixed;
 }
 
-.row {
-    display: flex;
-  }
-  
-.column {
-    flex: 50%;
-  }
+th,
+td {
+    padding: 10px;
+    border: 2px solid #001524;
+    overflow: hidden;
+}
 
-a.contact {
-    float: right;
+th {
+    background-color: #001524;
+    color: #ffecd1;
+    font-weight: bold;
+}
+
+tr {
+    background-color: #e0d0b9;
+}
+
+tr:nth-child(even) {
+    background-color: #9e907c;
+}
+
+tr:hover {
+    background-color: #78290f;
+    color: #ffecd1;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+video {
+    width: 40%;
+    height: auto;
+}
+
+/*-------------------------------*/
+
+/* FORM */
+
+div.formContact {
+    width: 50%;
+    height: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    
+ }
+
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #15616d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+label {
+    margin: 8px;
 }
