@@ -11,13 +11,13 @@
 
 <body>
     <header>
-        <h1>Bienvenue au zoo des Zanimos</h1>
+        <h1 id="headerTitle">Bienvenue au zoo des Zanimos</h1>
         <div class="navbar">
             <div class="menuItem">
                 <ul>
-                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a id="linkAcceuil" href="#">Acceuil</a></li>
                     <li class="subMenu">
-                        <a href="perso.html">Espace perso</a>
+                        <a id="linkPerso" href="#">Espace perso</a>
                         <div class="subMenuContent">
                             <a href="#">Connexion</a>
                             <a href="#">Mes informations</a>
@@ -25,133 +25,401 @@
                             <a href="#">Historique</a>
                         </div>
                     </li>
-                    <li><a href="animaux.html">Animaux</a></li>
-                    <li><a href="virtuel_audio.html">Visite Audio</a></li>
-                    <li><a href="virtuel_video.html">Visite Vidéo</a></li>
-                    <li style="float:right"><a class="active" href="contact.html">Contact</a></li>
+                    <li><a id="linkAnimaux" href="#">Animaux</a></li>
+                    <li><a id="linkAudio" href="#">Visite Audio</a></li>
+                    <li><a id="linkVideo" href="#">Visite Vidéo</a></li>
+                    <li id="linkContact" style="float:right"><a class="active" href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
 
     </header>
 
-    <div class="pageContent">
-        <p>
-            Description Générale
-        <div class="row">
-            <div class="column">
-                Donec semper lectus in ligula sollicitudin volutpat nec at orci. Interdum et malesuada fames ac ante
-                ipsum primis in faucibus. Vestibulum sapien lorem, facilisis ac sapien non, mollis imperdiet magna.
-                Nulla in massa nec mauris ullamcorper auctor sed in mauris. Nunc dolor enim, ultrices eu cursus vel,
-                dignissim eget quam. Integer non condimentum tellus, non ultrices sem. Fusce nulla dolor, tristique ut
-                tortor eu, volutpat tincidunt nisl. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus
-                nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam
-                placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit
-                amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus
-                vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa
-                nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper
-                libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl
-                vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla
-                neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc.
-                Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam placerat,
-                velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo.
-                Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel eros
-                cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec risus
-                aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper libero.
-                Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae tempor
-                rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
-                maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc. Vestibulum
-                ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam placerat, velit
-                aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo. Morbi
-                neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel eros cursus
-                tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec risus aliquet
-                blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper libero. Donec
-                consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae tempor
-                rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
-                maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc. Vestibulum
-                ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam placerat, velit
-                aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo. Morbi
-                neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel eros cursus
-                tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec risus aliquet
-                blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper libero. Donec
-                consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae tempor
-                rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
-                maximus aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-                himenaeos. Nullam purus nisi, imperdiet hendrerit ante euismod, pharetra accumsan nunc. Pellentesque est
-                lorem, condimentum eu mattis vitae, lobortis sit amet justo. Morbi quis nunc nec orci imperdiet rhoncus
-                sed vitae tortor. Vestibulum fringilla ullamcorper mauris sit amet imperdiet. Suspendisse dictum egestas
-                felis, at auctor tellus lacinia non.
+    <!--Acceuil---------------------------------------------------------------->
+
+    <div id="pageAcceuil" class="displayedDiv">
+        <div class="pageContent">
+            <p>
+                Description Générale
+            <div class="row">
+                <div class="column">
+                    Donec semper lectus in ligula sollicitudin volutpat nec at orci. Interdum et malesuada fames ac ante
+                    ipsum primis in faucibus. Vestibulum sapien lorem, facilisis ac sapien non, mollis imperdiet magna.
+                    Nulla in massa nec mauris ullamcorper auctor sed in mauris. Nunc dolor enim, ultrices eu cursus vel,
+                    dignissim eget quam. Integer non condimentum tellus, non ultrices sem. Fusce nulla dolor, tristique
+                    ut
+                    tortor eu, volutpat tincidunt nisl. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus
+                    nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam
+                    placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit
+                    amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus
+                    lacus
+                    vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel
+                    massa
+                    nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin
+                    ullamcorper
+                    libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl
+                    vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus
+                    fringilla
+                    neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc.
+                    Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam
+                    placerat,
+                    velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo.
+                    Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel
+                    eros
+                    cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec
+                    risus
+                    aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper
+                    libero.
+                    Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae
+                    tempor
+                    rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
+                    maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc. Vestibulum
+                    ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam placerat, velit
+                    aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo. Morbi
+                    neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel eros
+                    cursus
+                    tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec risus
+                    aliquet
+                    blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper libero. Donec
+                    consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae tempor
+                    rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
+                    maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc. Vestibulum
+                    ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam placerat, velit
+                    aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo. Morbi
+                    neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel eros
+                    cursus
+                    tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec risus
+                    aliquet
+                    blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper libero. Donec
+                    consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae tempor
+                    rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
+                    maximus aliquam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                    himenaeos. Nullam purus nisi, imperdiet hendrerit ante euismod, pharetra accumsan nunc. Pellentesque
+                    est
+                    lorem, condimentum eu mattis vitae, lobortis sit amet justo. Morbi quis nunc nec orci imperdiet
+                    rhoncus
+                    sed vitae tortor. Vestibulum fringilla ullamcorper mauris sit amet imperdiet. Suspendisse dictum
+                    egestas
+                    felis, at auctor tellus lacinia non.
+                </div>
+                <div class="column">
+                    Maecenas eget lorem quis risus elementum dictum eget in tellus. Nunc dictum imperdiet turpis, at
+                    placerat mauris condimentum sodales. Suspendisse accumsan eros ac tellus ultrices venenatis.
+                    Vestibulum
+                    elit lectus, tincidunt non efficitur eu, dapibus quis ligula. Aenean non tortor condimentum, euismod
+                    augue vel, feugiat felis. Nullam lectus Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac
+                    purus
+                    nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam
+                    placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit
+                    amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus
+                    lacus
+                    vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel
+                    massa
+                    nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin
+                    ullamcorper
+                    libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl
+                    vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus
+                    fringilla
+                    neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc.
+                    Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam
+                    placerat,
+                    velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo.
+                    Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel
+                    eros
+                    cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec
+                    risus
+                    aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper
+                    libero.
+                    Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae
+                    tempor
+                    rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
+                    maximus aliquam.purus, sagittis et tortor quis, venenatis tincidunt urna. Aliquam dapibus finibus
+                    odio
+                    ac pulvinar.
+                </div>
+                <div class="column">
+                    Sed a erat diam. Nulla lectus nisl, laoreet sed justo pulvinar, Fusce dignissim lectus imperdiet
+                    lacinia
+                    pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
+                    sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
+                    mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
+                    ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
+                    convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
+                    ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra
+                    enim
+                    rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem
+                    lorem
+                    sed mauris. Vivamus fringilla neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia
+                    pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
+                    sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
+                    mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
+                    ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
+                    convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
+                    ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra
+                    enim
+                    rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem
+                    lorem
+                    sed mauris. Vivamus fringilla neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia
+                    pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
+                    sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
+                    mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
+                    ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
+                    convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
+                    ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra
+                    enim
+                    rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem
+                    lorem
+                    sed mauris. Vivamus fringilla neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia
+                    pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
+                    sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
+                    mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
+                    ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
+                    convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
+                    ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra
+                    enim
+                    rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem
+                    lorem
+                    sed mauris. Vivamus fringilla neque in maximus aliquam.condimentum elementum mauris. Ut posuere nibh
+                    risus, eget consectetur mauris dictum sed. Sed aliquet est nec ipsum ullamcorper, vel pretium nibh
+                    fringilla. Vivamus rhoncus libero ut urna mollis commodo. Fusce imperdiet magna tempor lectus
+                    vestibulum
+                    faucibus. Nunc tincidunt auctor risus a posuere. Nulla venenatis nulla purus, sed ornare risus
+                    mollis
+                    id. Phasellus erat quam, iaculis sed auctor non, semper ac lacus.
+                </div>
             </div>
-            <div class="column">
-                Maecenas eget lorem quis risus elementum dictum eget in tellus. Nunc dictum imperdiet turpis, at
-                placerat mauris condimentum sodales. Suspendisse accumsan eros ac tellus ultrices venenatis. Vestibulum
-                elit lectus, tincidunt non efficitur eu, dapibus quis ligula. Aenean non tortor condimentum, euismod
-                augue vel, feugiat felis. Nullam lectus Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus
-                nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam
-                placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit
-                amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus
-                vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa
-                nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper
-                libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl
-                vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla
-                neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia pretium. Etiam ac purus nunc.
-                Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur sagittis aliquet. Nam placerat,
-                velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non mollis massa mauris sit amet leo.
-                Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id ligula. Donec faucibus lacus vel eros
-                cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel convallis nibh. Duis vel massa nec risus
-                aliquet blandit in eget quam. Nunc nibh ante, blandit eget ipsum sed, sollicitudin ullamcorper libero.
-                Donec consectetur ipsum at tortor lacinia, in pharetra enim rutrum. Phasellus dapibus, nisl vitae tempor
-                rhoncus, nulla felis vehicula elit, non fermentum sem lorem sed mauris. Vivamus fringilla neque in
-                maximus aliquam.purus, sagittis et tortor quis, venenatis tincidunt urna. Aliquam dapibus finibus odio
-                ac pulvinar.
-            </div>
-            <div class="column">
-                Sed a erat diam. Nulla lectus nisl, laoreet sed justo pulvinar, Fusce dignissim lectus imperdiet lacinia
-                pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
-                sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
-                mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
-                ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
-                convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
-                ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim
-                rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem
-                sed mauris. Vivamus fringilla neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia
-                pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
-                sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
-                mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
-                ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
-                convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
-                ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim
-                rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem
-                sed mauris. Vivamus fringilla neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia
-                pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
-                sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
-                mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
-                ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
-                convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
-                ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim
-                rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem
-                sed mauris. Vivamus fringilla neque in maximus aliquam. Fusce dignissim lectus imperdiet lacinia
-                pretium. Etiam ac purus nunc. Vestibulum ullamcorper efficitur lacus ac condimentum. Nam consectetur
-                sagittis aliquet. Nam placerat, velit aliquam ullamcorper fermentum, neque lectus tempor nibh, non
-                mollis massa mauris sit amet leo. Morbi neque nulla, fringilla ac ullamcorper viverra, faucibus id
-                ligula. Donec faucibus lacus vel eros cursus tempus. Ut dignissim eget velit in tincidunt. Donec vel
-                convallis nibh. Duis vel massa nec risus aliquet blandit in eget quam. Nunc nibh ante, blandit eget
-                ipsum sed, sollicitudin ullamcorper libero. Donec consectetur ipsum at tortor lacinia, in pharetra enim
-                rutrum. Phasellus dapibus, nisl vitae tempor rhoncus, nulla felis vehicula elit, non fermentum sem lorem
-                sed mauris. Vivamus fringilla neque in maximus aliquam.condimentum elementum mauris. Ut posuere nibh
-                risus, eget consectetur mauris dictum sed. Sed aliquet est nec ipsum ullamcorper, vel pretium nibh
-                fringilla. Vivamus rhoncus libero ut urna mollis commodo. Fusce imperdiet magna tempor lectus vestibulum
-                faucibus. Nunc tincidunt auctor risus a posuere. Nulla venenatis nulla purus, sed ornare risus mollis
-                id. Phasellus erat quam, iaculis sed auctor non, semper ac lacus.
-            </div>
+            </p>
         </div>
-        </p>
+
     </div>
+
+    <!--PAGE ANIMAUX---------------------------------------------------------->
+
+    <div id="pageAnimaux" class="hiddenDiv">
+        <div class="pageContent">
+
+            <table id="table_animaux">
+                <tr>
+                    <th id="column_name">Nom</th>
+                    <th>Photo</th>
+                    <th>Desciption</th>
+                    <th>Pays natal</th>
+                    <th>Link</th>
+                    <th>Actions</th>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+
+    <!--PAGE PERSO---------------------------------------------------------------->
+
+    <div id="pagePerso" class="hiddenDiv">
+        <div class="pageContent">
+
+            <p>Connexion</p>
+            <p>Mes informations
+            <ol>
+                <li>Nom et Prénom</li>
+                <li>Numéro de tel</li>
+                <li>Email</li>
+            </ol>
+            </p>
+            <p>Messagerie</p>
+            <p>Historique</p>
+        </div>
+    </div>
+
+    <!--PAGE AUDIO---------------------------------------------------------------->
+
+    <div id="pageAudio" class="hiddenDiv">
+        <div class="pageContent">
+
+            <ul>
+                <li>
+                    <p>Scorpions</p>
+                    <audio controls autoplay muted src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
+                </li>
+                <li>
+                    <p>Reptiles</p>
+                    <audio controls src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
+                </li>
+                <li>
+                    <p>Aquarium</p>
+                    <audio controls src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
+                </li>
+                <li>
+                    <p>Savane</p>
+                    <audio controls src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <!--PAGE VIDEO---------------------------------------------------------------->
+
+    <div id="pageVideo" class="hiddenDiv">
+        <div class="pageContent">
+            <p>Lo poti singe</p>
+            <video controls autoplay muted src="./media/video/singe.mp4"></video>
+            <p>Lo poti tigre</p>
+            <video controls muted src="./media/video/tigre.mp4"></video>
+
+        </div>
+    </div>
+
+    <!--PAGE CONTACT---------------------------------------------------------------->
+
+    <div id="pageContact" class="hiddenDiv">
+        <div class="pageContent">
+
+            <div class="formContact">
+                <form action="" method="POST">
+                    <label>Nom </label><br />
+                    <input type="text" required="required" name="name" /><br />
+                    <label for="mail">Mail :</label><br />
+                    <input type="email" name="mail" /><br />
+                    <label for="tel">Tel :</label><br />
+                    <input type="tel" name="tel" /><br />
+                    <label for="objet">Objet :</label><br />
+                    <input type="text" name="objet" /><br />
+                    <label for="message">Message :</label><br />
+                    <textarea rows="5" cols="40" name="message" required="required"></textarea><br />
+                    <input type="submit" value="Envoyer" />
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!--FOOTER---------------------------------------------------------------->
 
     <footer>
         Infos Pratiques
     </footer>
 
 </body>
+
+<script>
+
+    //Variables
+    animaux_data = [
+        {
+            "name": "chèvre",
+            "photo": "./media/img/chevre.jpg",
+            "description": "Bète d'animal de ferme, ça broute sec !!",
+            "pays": "France",
+            "link": "link"
+        },
+        {
+            "name": "Chab",
+            "photo": "./media/img/chab.jpg",
+            "description": "Un véritable animal des plaines françaises et australiennes",
+            "pays": "Australie",
+            "link": "link"
+        },
+        {
+            "name": "Serpent",
+            "photo": "./media/img/serpent.jpg",
+            "description": "il n'a pas els pieds sur terre",
+            "pays": "Amériques",
+            "link": "link"
+        },
+        {
+            "name": "Ours du Bengal",
+            "photo": "./media/img/ours_bengale.jpg",
+            "description": "Parfait croisement entre un tigre et un ours au Bengal",
+            "pays": "Bengal",
+            "link": "link"
+        }
+    ];
+
+    //navigation bar
+    var boutonAcceuil = document.getElementById("linkAcceuil");
+    var boutonAnimaux = document.getElementById("linkAnimaux");
+    var boutonPerso = document.getElementById("linkPerso");
+    var boutonAudio = document.getElementById("linkAudio");
+    var boutonVideo = document.getElementById("linkVideo");
+    var boutonContact = document.getElementById("linkContact");
+
+    //content divs
+    var divAcceuil = document.getElementById("pageAcceuil");
+    var divAnimaux = document.getElementById("pageAnimaux");
+    var divPerso = document.getElementById("pagePerso");
+    var divAudio = document.getElementById("pageAudio");
+    var divVideo = document.getElementById("pageVideo");
+    var divContact = document.getElementById("pageContact");
+
+    //set Onclick for each nav button
+    boutonAcceuil.setAttribute('onclick', 'navigationBarClick(divAcceuil)');
+    boutonAnimaux.setAttribute('onclick', 'navigationBarClick(divAnimaux)');
+    boutonPerso.setAttribute('onclick', 'navigationBarClick(divPerso)');
+    boutonAudio.setAttribute('onclick', 'navigationBarClick(divAudio)');
+    boutonVideo.setAttribute('onclick', 'navigationBarClick(divVideo)');
+    boutonContact.setAttribute('onclick', 'navigationBarClick(divContact)');
+
+
+
+    //Functions
+    function generateTable() {
+        animaux_data.forEach(animal => {
+            document.getElementById("table_animaux").innerHTML +=
+                '<tr>' +
+                '<td>' + animal.name + '</td>' +
+                '<td><img src="' + animal.photo + '" alt=""></td>' +
+                '<td>' + animal.description + '</td>' +
+                '<td>' + animal.pays + '</td>' +
+                '<td>' + animal.link + '</td>' +
+                '<td> <button>Modifier</button> <br> <button>Supprimer</button> </td>'+
+                '</tr>';
+        });
+    }
+
+
+    function navigationBarClick(clickedDiv) {
+
+        var displayedElement = document.getElementsByClassName("displayedDiv")
+
+        displayedElement[0].setAttribute("class", "hiddenDiv");
+        clickedDiv.setAttribute("class", "displayedDiv")
+
+        dynamicHeader(clickedDiv);
+    }
+
+    function dynamicHeader(clickedDiv) {
+
+        headerTitle = document.getElementById("headerTitle");
+        switch (clickedDiv.getAttribute("id")) {
+            case "pageAcceuil":
+                headerTitle.innerHTML = "Bienvenue au ZOO des Zanimos";
+                break;
+            case "pageAnimaux":
+                headerTitle.innerHTML = "Les Zanimos du Zoo";
+                break;
+            case "pagePerso":
+                headerTitle.innerHTML = "Mon espace perso";
+                break;
+            case "pageAudio":
+                headerTitle.innerHTML = "Audio du Zoo";
+                break;
+            case "pageVideo":
+                headerTitle.innerHTML = "Video du Zoo";
+                break;
+            case "pageContact":
+                headerTitle.innerHTML = "Contact du ZOO";
+                break;
+        }
+
+
+    }
+
+
+    //Script
+    generateTable();
+
+
+</script>
 
 </html>
