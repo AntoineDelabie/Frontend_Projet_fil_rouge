@@ -198,7 +198,8 @@
     <div id="pageAnimaux" class="hiddenDiv">
         <div class="pageContent">
 
-            <table id="table_animaux">
+            <table id="table_animal">
+                <tbody id="table_animaux">
                 <tr>
                     <th id="column_name">Nom</th>
                     <th>Photo</th>
@@ -207,8 +208,21 @@
                     <th>Link</th>
                     <th>Actions</th>
                 </tr>
-
+            </tbody>
             </table>
+
+            <div class="form">
+                <h2>Ajouter un animal</h2>
+                <label>Nom animal </label><br />
+                <input type="text" id="nom_animal" required="required" name="name" /><br />
+                <label>Description</label><br />
+                <input type="text" id="desc_animal" required="required" name="desc" /><br />
+                <label>Pays natal</label><br />
+                <input type="text" id="pays_animal" required="required" name="pays" /><br />
+                <label>Lien</label><br />
+                <input type="text" id="lien_animal" required="required" name="link" /><br />
+                <button onclick="ajoutAnimal()">Ajout animal</button>
+            </div>
         </div>
     </div>
 
@@ -274,7 +288,7 @@
     <div id="pageContact" class="hiddenDiv">
         <div class="pageContent">
 
-            <div class="formContact">
+            <div class="form">
                 <form action="" method="POST">
                     <label>Nom </label><br />
                     <input type="text" required="required" name="name" /><br />
@@ -289,7 +303,7 @@
                     <input type="submit" value="Envoyer" />
                 </form>
             </div>
-            
+
         </div>
     </div>
 
@@ -302,124 +316,6 @@
 
 </body>
 
-<script>
-
-    //Variables
-    animaux_data = [
-        {
-            "name": "chèvre",
-            "photo": "./media/img/chevre.jpg",
-            "description": "Bète d'animal de ferme, ça broute sec !!",
-            "pays": "France",
-            "link": "link"
-        },
-        {
-            "name": "Chab",
-            "photo": "./media/img/chab.jpg",
-            "description": "Un véritable animal des plaines françaises et australiennes",
-            "pays": "Australie",
-            "link": "link"
-        },
-        {
-            "name": "Serpent",
-            "photo": "./media/img/serpent.jpg",
-            "description": "il n'a pas els pieds sur terre",
-            "pays": "Amériques",
-            "link": "link"
-        },
-        {
-            "name": "Ours du Bengal",
-            "photo": "./media/img/ours_bengale.jpg",
-            "description": "Parfait croisement entre un tigre et un ours au Bengal",
-            "pays": "Bengal",
-            "link": "link"
-        }
-    ];
-
-    //navigation bar
-    var boutonAcceuil = document.getElementById("linkAcceuil");
-    var boutonAnimaux = document.getElementById("linkAnimaux");
-    var boutonPerso = document.getElementById("linkPerso");
-    var boutonAudio = document.getElementById("linkAudio");
-    var boutonVideo = document.getElementById("linkVideo");
-    var boutonContact = document.getElementById("linkContact");
-
-    //content divs
-    var divAcceuil = document.getElementById("pageAcceuil");
-    var divAnimaux = document.getElementById("pageAnimaux");
-    var divPerso = document.getElementById("pagePerso");
-    var divAudio = document.getElementById("pageAudio");
-    var divVideo = document.getElementById("pageVideo");
-    var divContact = document.getElementById("pageContact");
-
-    //set Onclick for each nav button
-    boutonAcceuil.setAttribute('onclick', 'navigationBarClick(divAcceuil)');
-    boutonAnimaux.setAttribute('onclick', 'navigationBarClick(divAnimaux)');
-    boutonPerso.setAttribute('onclick', 'navigationBarClick(divPerso)');
-    boutonAudio.setAttribute('onclick', 'navigationBarClick(divAudio)');
-    boutonVideo.setAttribute('onclick', 'navigationBarClick(divVideo)');
-    boutonContact.setAttribute('onclick', 'navigationBarClick(divContact)');
-
-
-
-    //Functions
-    function generateTable() {
-        animaux_data.forEach(animal => {
-            document.getElementById("table_animaux").innerHTML +=
-                '<tr>' +
-                '<td>' + animal.name + '</td>' +
-                '<td><img src="' + animal.photo + '" alt=""></td>' +
-                '<td>' + animal.description + '</td>' +
-                '<td>' + animal.pays + '</td>' +
-                '<td>' + animal.link + '</td>' +
-                '<td> <button>Modifier</button> <br> <button>Supprimer</button> </td>'+
-                '</tr>';
-        });
-    }
-
-
-    function navigationBarClick(clickedDiv) {
-
-        var displayedElement = document.getElementsByClassName("displayedDiv")
-
-        displayedElement[0].setAttribute("class", "hiddenDiv");
-        clickedDiv.setAttribute("class", "displayedDiv")
-
-        dynamicHeader(clickedDiv);
-    }
-
-    function dynamicHeader(clickedDiv) {
-
-        headerTitle = document.getElementById("headerTitle");
-        switch (clickedDiv.getAttribute("id")) {
-            case "pageAcceuil":
-                headerTitle.innerHTML = "Bienvenue au ZOO des Zanimos";
-                break;
-            case "pageAnimaux":
-                headerTitle.innerHTML = "Les Zanimos du Zoo";
-                break;
-            case "pagePerso":
-                headerTitle.innerHTML = "Mon espace perso";
-                break;
-            case "pageAudio":
-                headerTitle.innerHTML = "Audio du Zoo";
-                break;
-            case "pageVideo":
-                headerTitle.innerHTML = "Video du Zoo";
-                break;
-            case "pageContact":
-                headerTitle.innerHTML = "Contact du ZOO";
-                break;
-        }
-
-
-    }
-
-
-    //Script
-    generateTable();
-
-
-</script>
+<script type="text/javascript" src="./logic.js"></script>
 
 </html>

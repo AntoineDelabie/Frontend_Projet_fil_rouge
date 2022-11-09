@@ -129,7 +129,6 @@ th,
 td {
     padding: 10px;
     border: 2px solid #001524;
-    overflow: hidden;
 }
 
 th {
@@ -165,13 +164,13 @@ video {
 
 /* FORM */
 
-div.formContact {
+div.form {
     width: 50%;
     height: 50%;
     margin-right: auto;
     margin-left: auto;
-    
- }
+
+}
 
 input[type=text],
 input[type=tel],
@@ -197,9 +196,25 @@ input[type=submit] {
     cursor: pointer;
 }
 
+button {
+    width: 100%;
+    background-color: #15616d;
+    color: white;
+    padding: 20px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1c8191;
+}
+
 label {
     margin: 8px;
 }
+
 /*--------------------------------------------------*/
 div.hiddenDiv {
     display: none;
