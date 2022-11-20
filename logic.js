@@ -57,6 +57,7 @@ boutonContact.setAttribute('onclick', 'navigationBarClick(divContact)');
 //champs form ajout animal
 var inputNomAnimal = document.getElementById("nom_animal");
 var inputDescAnimal = document.getElementById("desc_animal");
+var inputImageAnimal = document.getElementById("image_animal")
 var inputPaysAnimal = document.getElementById("pays_animal");
 var inputLienAnimal = document.getElementById("lien_animal");
 
@@ -121,15 +122,16 @@ function ajoutAnimal() {
         document.getElementById("table_animaux").innerHTML +=
             '<tr>' +
             '<td>' + nouvelAnimal.name + '</td>' +
-            '<td><img src="' + '" alt=""></td>' +
+            '<td><img src="' +'" alt=""></td>' +
             '<td>' + nouvelAnimal.desc + '</td>' +
             '<td>' + nouvelAnimal.pays + '</td>' +
-            '<td>' + nouvelAnimal.link + '</td>' +
+            '<td>'+ nouvelAnimal.link+'</td>' +
             '<td> <button>Modifier</button> <br> <button onclick="supprimerAnimal(this)">Supprimer</button> </td>' +
             '</tr>';
 
         animaux_data.push(nouvelAnimal);
 
+        //reset champs formulaires
         inputNomAnimal.value = "";
         inputDescAnimal.value = "";
         inputPaysAnimal.value = "";
