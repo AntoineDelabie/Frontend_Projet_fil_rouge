@@ -120,14 +120,12 @@ function ajoutAnimal() {
 
     if (nouvelAnimal.name != "" && nouvelAnimal.desc != "" && nouvelAnimal.pays != "" && nouvelAnimal.link != "") {
         document.getElementById("table_animaux").innerHTML +=
-            '<tr>' +
-            '<td>' + nouvelAnimal.name + '</td>' +
-            '<td><img src="' +'" alt=""></td>' +
-            '<td>' + nouvelAnimal.desc + '</td>' +
-            '<td>' + nouvelAnimal.pays + '</td>' +
-            '<td>'+ nouvelAnimal.link+'</td>' +
-            '<td> <button>Modifier</button> <br> <button onclick="supprimerAnimal(this)">Supprimer</button> </td>' +
-            '</tr>';
+            '<div class="bg-success text-white rounded col-lg-5 col-md-12 col-sm-8 border border-dark m-4 p-1">' +
+            '<h1 class="display-4">' + nouvelAnimal.name + '</h1>' +
+            '<p class="lead">' + nouvelAnimal.desc + '</p>' +
+            '<img class="img-thumbnail" src="./media/img/chevre.jpg" alt=""></img>'+
+            '<p>' + nouvelAnimal.pays + '</p>' +
+            '</div>';
 
         animaux_data.push(nouvelAnimal);
 
@@ -148,4 +146,4 @@ function supprimerAnimal(row) {
 
 
 //Script
-generateTable();
+//generateTable();
