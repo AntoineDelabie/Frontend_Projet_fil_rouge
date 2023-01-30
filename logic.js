@@ -92,10 +92,10 @@ function dynamicHeader(clickedDiv) {
     headerTitle = document.getElementById("headerTitle");
     switch (clickedDiv.getAttribute("id")) {
         case "pageAcceuil":
-            headerTitle.innerHTML = "Bienvenue au ZOO des Zanimos";
+            headerTitle.innerHTML = "Le retour du jedi de l'imprimante 3D";
             break;
         case "pageAnimaux":
-            headerTitle.innerHTML = "Les Zanimos du Zoo";
+            headerTitle.innerHTML = "Achat imprimantes 3D";
             break;
         case "pagePerso":
             headerTitle.innerHTML = "Mon espace perso";
@@ -123,7 +123,7 @@ function ajoutAnimal() {
             '<div class="bg-success text-white rounded col-lg-5 col-md-12 col-sm-8 border border-dark m-4 p-1">' +
             '<h1 class="display-4">' + nouvelAnimal.name + '</h1>' +
             '<p class="lead">' + nouvelAnimal.desc + '</p>' +
-            '<img class="img-thumbnail" src="./media/img/chevre.jpg" alt=""></img>'+
+            '<img class="img-thumbnail" src="./media/img/chevre.jpg" alt=""></img>' +
             '<p>' + nouvelAnimal.pays + '</p>' +
             '</div>';
 
