@@ -30,7 +30,7 @@
                             <a href="#">Historique</a>
                         </section>
                     </li>
-                    <li><a id="linkAnimaux" href="#">Boutique</a></li>
+                    <li><a id="" href="imprimante.html">Boutique</a></li>
                     <li><a id="linkVideo" href="#">Formation</a></li>
                     <li id="linkContact" style="float:right"><a class="active" href="#">Contact</a></li>
                 </ul>
@@ -57,12 +57,12 @@
 
             <section>
                 découvrez nos formations
-                Lien vers page de formation
+                <p><a href="#">Formation</a></p>
 
-                H2 : nos imprimantes 3D
-                Lien vers boutique
+                <h2> nos imprimantes 3D :</h2>
+                <p><a  href="imprimante.html">Boutique</a></p>
 
-                H2 :L'impression 3d qu'est-ce que c'est ?
+                <h2>L'impression 3d qu'est-ce que c'est ?</h2>
 
                 L'impression 3D ou fabrication additive regroupe les procédés de fabrication permettant de créer des
                 pièces en volume par ajout de matière en couches successives. Elle s'oppose à la fabrication
@@ -85,145 +85,6 @@
         </section>
 
     </div>
-
-    <!--PAGE ANIMAUX---------------------------------------------------------->
-
-    <div id="pageAnimaux" class="hiddenDiv">
-        <section class="pageContent">
-
-            <section id="table_animaux">
-                <section class="row m-5">
-                    <section
-                        class="bg-success text-white rounded col-lg-5 col-md-12 col-sm-8 border border-dark m-4 p-1">
-                        <h1 class="display-4">Chevre</h1>
-                        <p class="lead">Bète d'animal de ferme, ça broute sec !!</p>
-                        <img class="img-thumbnail" src="./media/img/chevre.jpg" alt="">
-                        <p>France</p>
-                    </section>
-                    <section
-                        class="bg-success text-white rounded col-lg-5 col-md-12 col-sm-8 border border-dark m-4 p-1 ">
-                        <h1 class="display-4">Chab</h1>
-                        <p class="lead">Un véritable animal des plaines françaises et australiennes</p>
-                        <img class="img-thumbnail" src="./media/img/chab.jpg" alt="">
-                        <p>France</p>
-                    </section>
-
-                    <section
-                        class="bg-success text-white rounded col-lg-5 col-md-12 col-sm-8  border border-dark m-4 p-2">
-                        <h1 class="display-4">Serpent</h1>
-                        <p class="lead">Il n'a pas les pieds sur terre.</p>
-                        <img class="img-thumbnail" src="./media/img/serpent.jpg" alt="">
-                        <p>Amériques</p>
-                    </section>
-                    <section
-                        class="bg-success text-white rounded col-lg-5 col-md-12 col-sm-8  border border-dark m-4 p-2">
-                        <h1 class="display-4">Ours du Bengal</h1>
-                        <p class="lead">Parfait croisement entre un tigre et un ours au Bengal</p>
-                        <img class="img-thumbnail" src="./media/img/ours_bengale.jpg" alt="">
-                        <p>Bengal</p>
-                    </section>
-                </section>
-
-
-            </section>
-
-            <div class="form">
-                <h2>Ajouter un animal</h2>
-                <label>Nom animal </label><br />
-                <input type="text" id="nom_animal" required="required" name="name" /><br />
-                <label>Description</label><br />
-                <input type="text" id="desc_animal" required="required" name="desc" /><br />
-                <label>Pays natal</label><br />
-                <input type="text" id="pays_animal" required="required" name="pays" /><br />
-                <label>Link</label><br />
-                <input type="text" id="lien_animal" required="required" name="link" /><br />
-                <button onclick="ajoutAnimal()">Ajout animal</button>
-            </div>
-        </section>
-    </div>
-
-    <!--PAGE PERSO---------------------------------------------------------------->
-
-    <div id="pagePerso" class="hiddenDiv">
-        <section class="pageContent">
-
-            <p>Connexion</p>
-            <p>Mes informations
-            <ol>
-                <li>Nom et Prénom</li>
-                <li>Numéro de tel</li>
-                <li>Email</li>
-            </ol>
-            </p>
-            <p>Messagerie</p>
-            <p>Historique</p>
-        </section>
-    </div>
-
-    <!--PAGE AUDIO---------------------------------------------------------------->
-
-    {# <div id="pageAudio" class="hiddenDiv">
-        <section class="pageContent">
-
-            <ul>
-                <li>
-                    <p>Scorpions</p>
-                    <audio controls autoplay muted src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
-                </li>
-                <li>
-                    <p>Reptiles</p>
-                    <audio controls src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
-                </li>
-                <li>
-                    <p>Aquarium</p>
-                    <audio controls src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
-                </li>
-                <li>
-                    <p>Savane</p>
-                    <audio controls src="./media/audio/Scorpions_The_Zoo.mp3"></audio>
-                </li>
-            </ul>
-
-        </section>
-    </div>
-
-    <!--PAGE VIDEO---------------------------------------------------------------->
-#}
-
-    <div id="pageVideo" class="hiddenDiv">
-        <section class="pageContent">
-            <p>Setup d'une imprimante 3D    </p>
-            <video controls autoplay muted src="./media/video/singe.mp4"></video>
-            <p>Customisation de l'imprimante 3D</p>
-            <video controls muted src="./media/video/tigre.mp4"></video>
-
-        </section>
-    </div>
-
-    <!--PAGE CONTACT---------------------------------------------------------------->
-
-    <div id="pageContact" class="hiddenDiv">
-        <section class="pageContent">
-
-            <section class="form">
-                <form action="" method="POST">
-                    <label>Nom </label><br />
-                    <input type="text" required="required" name="name" /><br />
-                    <label for="mail">Mail :</label><br />
-                    <input type="email" name="mail" /><br />
-                    <label for="tel">Tel :</label><br />
-                    <input type="tel" name="tel" /><br />
-                    <label for="objet">Objet :</label><br />
-                    <input type="text" name="objet" /><br />
-                    <label for="message">Message :</label><br />
-                    <textarea rows="5" cols="40" name="message" required="required"></textarea><br />
-                    <input type="submit" value="Envoyer" />
-                </form>
-            </section>
-
-        </section>
-    </div>
-
 
     <!--FOOTER---------------------------------------------------------------->
 
